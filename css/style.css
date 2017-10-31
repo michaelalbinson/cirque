@@ -1,0 +1,201 @@
+:root {
+	--main-theme-color: #286190;
+	--light-theme-color: #5496CD;
+	--lightest-theme-color: #89C9FF;
+	--dark-theme-color: #0E2B44;
+	--darkest-them-color: #000101;
+}
+
+body {
+	text-align: center;
+	color: black;
+	font-family: "Oswald", Georgia, sans-serif;
+	margin: 0;
+}
+
+.splash {
+	background-image: url("../assets/crowd.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 0;
+	color: white;
+}
+
+hr {
+	border-color: var(--lightest-theme-color);
+	color: var(--lightest-theme-color);
+	width: 35%;
+}
+
+hr.full {
+	width: 100%;
+	border-color: black;
+}
+
+.splash h1 {
+	font-size: 8em;
+	margin-top: 0;
+	padding-top: 1em;
+	margin-bottom: 0;
+}
+
+h3 {
+	margin-top: 0; 
+	font-weight: normal;
+}
+
+.description p,
+.sponsorship p,
+.speakers p,
+.about p {
+	width: 75%;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	display: block;
+
+}
+
+.extra-light {
+	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.light {
+	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.description {
+	background-image: url("../assets/logo.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 80%;
+	color: black;
+}
+
+.inner-image-wrap {
+	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.cranes {
+	background-color: var(--lightest-theme-color);
+	color: black;
+}
+
+.header h2 { 
+	display: inline-block;
+}
+
+.header-img {
+	width: 2em;
+}
+
+.footer-img {
+	width: 50px;
+}
+
+.section-head {
+	background-color: var(--lightest-theme-color);
+}
+
+.section-head h1 {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.fixed-to-top {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.spons {
+	background-image: url("../assets/rmc.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;	
+	background-position: left center;
+}
+
+.speak {
+	background-image: url("../assets/alan.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.about {
+	background-image: url("../assets/full_conference.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	background-color: black;
+	z-index: 500;
+	height: 3em;
+}
+
+header a {
+	color: white;
+	text-decoration: none;
+}
+
+header a:hover, 
+header a:focus,
+header a:active {
+	color: var(--dark-theme-color);
+	text-decoration: none;
+}
+
+a {
+	color: var(--lightest-theme-color);
+	text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: var(--dark-theme-color);
+	text-decoration: none;
+}
+
+header hr {
+	margin: 0;
+	padding: 0;
+}
+
+.row {
+	margin: 0 !important;
+}
+
+.sponsorship p {
+	width: 75%;
+	margin: 0 auto;
+	margin-bottom: 1em;
+	display: block;
+}
+
+.divider {  
+	height: 74px; 
+	width: 100%; 
+	background: rgba(249,250,251,1); 
+	background: -webkit-gradient(left top, left bottom, 
+		color-stop(0%, rgba(249,250,251,1)), 
+		color-stop(0%, rgba(249,250,251,1)), 
+		color-stop(100%, rgba(225,228,231,1)));
+	background: linear-gradient(to bottom, rgba(249,250,251,1) 0%, 
+		rgba(249,250,251,1) 0%, rgba(225,228,231,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9fafb', endColorstr='#e1e4e7', GradientType=0 ); 
+}
+
+.header-target {
+	height: 3em;
+}
