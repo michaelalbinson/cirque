@@ -1,14 +1,15 @@
 "use strict";
-var global_fixed_to_top_position = $("#head").offsetTop;
-window.addEventListener("scroll", function() {
-	const fixedName = 'fixed-to-top';
-	var elementTarget = $("#head");
-	if (window.scrollY > global_fixed_to_top_position) {
-		if (!elementTarget.hasClass(fixedName))
-		elementTarget.addClass(fixedName);
-	}
-	else {
-		if (elementTarget.hasClass(fixedName))
-			elementTarget.removeClass('fixed-to-top');
-	}
+$(document).ready(function() {setTimeout(function(){$('.loading').fadeOut()}, 2000)});
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
 });
+
+function toggleMenu() {
+	$('#mobile-menu').toggle();
+	$('.alt-menu').toggle();
+}
