@@ -1,4 +1,4 @@
-@media (max-width: 1000px) {
+@media (min-width: 601px) {
 	.alt-menu {
 		display: none;
 	}
@@ -9,10 +9,65 @@
 
 	.close-btn {
 		display: none;
+	} 
+}
+
+@media (min-width: 992px) {
+	.box {
+    	height: auto !important;
+    	
+		padding-top: 10%;
+		padding-bottom: 10%;
+	}
+
+	.special-padding {
+		margin-top: 30%;
+	}
+
+	.special-padding-less {
+		margin-top: 15%;
+	}
+
+	.special-padding-tad {
+		margin-top: 25%;
 	}
 }
 
-@media (max-width: 500px) {
+@media (min-width: 1150px) {
+	.special-padding {
+		margin-top: 25%;
+	}
+
+	.special-padding-tad {
+		margin-top: 20%;
+	}
+
+	.special-padding-less {
+		margin-top: 10%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.special-padding {
+		margin-top: 15%;
+	}
+
+	.special-padding-tad {
+		margin-top: 15%;
+	}
+
+	.special-padding-less {
+		margin-top: 5%;
+	}
+}
+
+@media (max-width: 992px) {
+	.workshop-img {
+		padding-bottom: 20px;
+	}
+}
+
+@media (max-width: 600px) {
 	.header {
 		display: none;
 	}
@@ -30,12 +85,7 @@
 		top: 1em;
 		left: 1em;
 		opacity: 0.5;
-	}
-
-	.alt-menu button {
-		border: none;
-		border-radius: 3px;
-		background-color: #5496CD;
+		z-index: 1000;
 	}
 
 	hr {
@@ -49,6 +99,7 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 500;
 }
 
 #mobile-menu a:hover,
@@ -75,4 +126,50 @@
 	border: 0;
 	background-color: transparent;
 	opacity: 0.5;
+}
+
+/** Hamburger tho **/
+.hamburgler {
+  width: 2em;
+  height: 2em;
+  display: block;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+.hamburgler.no-hamburgler {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.bun,
+.meat {
+  display: block;
+  width: 100%;
+  background: #CB4B1F;
+  height: 20%;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  border-radius: 50px;
+}
+
+.no-hamburgler .top {
+  height: 38%;
+  width: 20%;
+  margin-left: 40%;
+  border-radius: 50px 50px 0 0;
+}
+
+.no-hamburgler .bottom {
+  height: 38%;
+  width: 20%;
+  margin-left: 40%;
+  border-radius: 0 0 50px 50px;
+}
+
+.meat {
+  margin: 20% 0;
+}
+
+.no-hamburgler .meat {
+  margin: 2% 0;
 }
