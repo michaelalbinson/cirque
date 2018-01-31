@@ -28,11 +28,15 @@
 	<link rel="stylesheet" href="css/mobile-style.css" type="text/css"/>
 	<link rel="stylesheet" href="css/footer.css" type="text/css"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/buttons.js"></script>
+	<script type="text/javascript" src="js/sources.js"></script>
     <!-- <<Mobile Viewport Code>> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -179,124 +183,108 @@
 			</div>
 			<div id="schedule" class="">
 				<br>
+				<h2>CIRQUE 2018 Schedule</h2>
+				<p><i>Click on an event to see more</i></p>
 				<div class="row">
 					<div class="col-md-offset-2 col-md-4 col-sm-6">
 						<h3>Friday February 2nd</h3>
-						<table>
+						<table id="feb-2">
 							<tr class="centered header-cell">
 								<th>Time</th>
 								<th class="left-border">Event</th>
-								<th class="left-border">Location</th>
 							</tr>
-							<tr>
+							<tr class="clickable-row" tabindex="0" role="button">
 								<td>16:00</td>
 								<td class="left-border">Registration and Sponsorship Expo</td>
-								<td class="left-border">TBA</td>
 							</tr>
-							<tr>
+							<tr class="clickable-row" tabindex="0" role="button">
 								<td>17:30</td>
 								<td class="left-border">Opening Remarks and Dinner</td>
-								<td class="left-border">TBA</td>
 							</tr>
-							<tr>
+							<tr class="clickable-row" tabindex="0" role="button">
 								<td>18:30</td>
-								<td class="left-border">Speaker #1</td>
-								<td class="left-border">TBA</td>
+								<td class="left-border">Speaker: Andy Shaughnessy</td>
 							</tr>
-							<tr>
+							<tr class="clickable-row" tabindex="0" role="button">
 								<td>19:30</td>
-								<td class="left-border">Workshop #1</td>
-								<td class="left-border">TBA</td>
+								<td class="left-border">Workshop - Presented by Enactus</td>
 							</tr>
-							<tr>
+							<tr class="clickable-row" tabindex="0" role="button">
 								<td>21:00</td>
-								<td class="left-border">Friday Keynote Speaker</td>
-								<td class="left-border">TBA</td>
+								<td class="left-border">Friday Keynote: Hugh Cameron</td>
 							</tr>
-							<tr>
+							<tr class="clickable-row" tabindex="0" role="button">
 								<td>22:00</td>
-								<td class="left-border">Social</td>
-								<td class="left-border">TBA</td>
+								<td class="left-border">Social at Blu Martini (19+)</td>
 							</tr>
 						</table>
 					</div>
 					<div class="col-md-4 col-sm-6">
 						<h3>Saturday February 3rd</h3>
-						<table>
+						<table id="feb-3">
 							<tr class="centered header-cell">
 								<th>Time</th>
 								<th>Event</th>
-								<th>Location</th>
 							</tr>
-							<tr>
+							<tr class="clickable-row" tabindex="0" role="button">
 								<td>8:30</td>
 								<td class="left-border">Breakfast and Morning Welcome</td>
-								<td class="left-border">TBA</td>
 							</tr>
-							<tr>
+							<tr class="clickable-row" tabindex="0" role="button">
 								<td>9:30</td>
-								<td class="left-border">Speaker #3</td>
-								<td class="left-border">TBA</td>
+								<td class="left-border">Speaker: Meaghan O’Reilly</td>
 							</tr>
-							<tr>
+							<tr class="clickable-row" tabindex="0" role="button">
 								<td>10:30</td>
-								<td class="left-border">Workshop #2</td>
-								<td class="left-border">TBA</td>
+								<td class="left-border">Workshop - Presented by CIRQUE</td>
 							</tr>
-							<tr>
+							<tr class="clickable-row" tabindex="0" role="button">
 								<td>11:30</td>
-								<td class="left-border">BCG Case Competition</td>
-								<td class="left-border">TBA</td>
+								<td class="left-border">Case Workshop - Presented by BCG</td>
 							</tr>
-							<tr>
+							<tr class="clickable-row" tabindex="0" role="button">
 								<td>13:00</td>
 								<td class="left-border">Lunch</td>
-								<td class="left-border">TBA</td>
 							</tr>
-							<tr>
+							<tr class="clickable-row" tabindex="0" role="button">
 								<td>14:00</td>
-								<td class="left-border">Case Competition Cont.</td>
-								<td class="left-border">TBA</td>
+								<td class="left-border">Case Workshop Cont.</td>
 							</tr>
-							<tr>
-								<td>15:00</td>
-								<td class="left-border">Speaker #4</td>
-								<td class="left-border">TBA</td>
+							<tr class="clickable-row" tabindex="0" role="button">
+								<td>14:30</td>
+								<td class="left-border">Speaker: Oleg Baranov</td>
 							</tr>
-							<tr>
-								<td>16:00</td>
+							<tr class="clickable-row" tabindex="0" role="button">
+								<td>15:30</td>
 								<td class="left-border">Coffee Break</td>
-								<td class="left-border">TBA</td>
 							</tr>
-							<tr>
-								<td>16:30</td>
-								<td class="left-border">Workshop #3</td>
-								<td class="left-border">TBA</td>
+							<tr class="clickable-row" tabindex="0" role="button">
+								<td>16:00</td>
+								<td class="left-border">Workshop - Presented by Scotiabank</td>
 							</tr>
-							<tr>
+							<tr class="clickable-row" tabindex="0" role="button">
+								<td>17:30</td>
+								<td class="left-border">Presentation by Scotiabank</td>
+							</tr>
+							<tr class="clickable-row" tabindex="0" role="button">
 								<td>18:00</td>
 								<td class="left-border">Break Before Dinner</td>
-								<td class="left-border">TBA</td>
 							</tr>
-							<tr>
+							<tr class="clickable-row" tabindex="0" role="button">
 								<td>18:30</td>
 								<td class="left-border">Dinner</td>
-								<td class="left-border">TBA</td>
 							</tr>
-							<tr>
+							<tr class="clickable-row" tabindex="0" role="button">
 								<td>19:30</td>
-								<td class="left-border">Speaker #5</td>
-								<td class="left-border">TBA</td>
+								<td class="left-border">Speaker: Stacey Douglas</td>
 							</tr>
-							<tr>
+							<tr class="clickable-row" tabindex="0" role="button">
 								<td>20:30</td>
-								<td class="left-border">Saturday Keynote</td>
-								<td class="left-border">TBA</td>
+								<td class="left-border">Saturday Keynote: John Gamble</td>
 							</tr>
-							<tr>
+							<tr class="clickable-row" tabindex="0" role="button">
 								<td>21:30</td>
 								<td class="left-border">Closing Remarks and Social</td>
-								<td class="left-border">TBA</td>
 							</tr>
 						</table>
 					</div>
@@ -819,7 +807,7 @@
 				</div>
 				<br><br>
 				<div class="row">
-					<div class="col-xs-offset-4 col-xs-4">
+					<div class="col-md-offset-4 col-md-4 col-xs-12">
 						<img src="assets/team/michael.JPG" class="executive-img" alt="Michael Albinson Headshot">
 						<h4>Michael Albinson</h4>
 						<hr class="no-upper-margin">
@@ -852,7 +840,27 @@
 	<div class="loading">
 		<div class="loading-wrap">
 			<img src="assets/cradle.svg" alt="Newton's cradle loading image">
-		<div>
+		</div>
+	</div>
+	<div class="modal fade" id="scheduleModal">
+		<div class="modal-dialog">
+  			<div class="modal-content">
+    			<div class="modal-header">
+    				<span tabindex="0" id="modal-close"></span>
+      				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      				<h3 class="modal-title"><span id="schd-modal-title">Modal title</span></h3>
+      				<div class="time"><h4 id="time-target"></h4></div>
+    			</div>
+    			<div class="modal-body">
+    				<div id="modal-img-target" class="blocker"></div>
+    				<br>
+      				<div id="body-text-target" class="justify-text">TEXT</div>
+      				<div id="map-target">TGT</div>
+      				<br><br>
+  					<button data-dismiss="modal" class="btn btn-default">Close</button>
+  				</div>
+  			</div>
+		</div>
 	</div>
 </body>
 </html>
